@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2.3 & 2.4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BÀI TẬP 2.4 - FORM ĐĂNG KÝ -->
+    <h2>Đăng ký tài khoản!</h2>
+
+    <p>Nhập và lựa chọn các thông tin đăng ký:</p>
+
+    <form action="#" class="form-area">
+
+        <input type="text" placeholder="Tên">
+        <input type="text" placeholder="Họ đệm"><br><br>
+
+        <input type="email" placeholder="Địa chỉ Email">
+        <input type="tel" placeholder="Số điện thoại"><br><br>
+
+        <select>
+            <option>Chọn thành phố</option>
+            <option>Hà Nội</option>
+            <option>TP. Hồ Chí Minh</option>
+        </select>
+
+        <select>
+            <option>Chọn tỉnh</option>
+            <option>Thanh Hóa</option>
+            <option>Hà Tĩnh</option>
+        </select><br><br>
+
+        <textarea rows="6" placeholder="Ghi chú"></textarea><br><br>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+
+
+    <!-- BÀI TẬP 2.3 - BẢNG SINH VIÊN -->
+    <h2>QUẢN LÝ SINH VIÊN</h2>
+
+    <table class="sv-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ và tên</th>
+                <th>Điểm</th>
+                <th>Xếp loại</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="4" class="group">Khóa A</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Trần Tiến Tài</td>
+                <td>7</td>
+                <td>Khá</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Phạm Mạnh Khoa</td>
+                <td>8</td>
+                <td>Khá</td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="group">Khóa B</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Trần Văn Hưng</td>
+                <td>5</td>
+                <td>Trung bình</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Đỗ Đức Thành</td>
+                <td>10</td>
+                <td>Giỏi</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="group"><b>TỔNG CỘNG</b></td>
+                <td><b>7.5</b></td>
+                <td><b>Khá</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
