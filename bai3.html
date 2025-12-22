@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+    <style>
+        #text {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<p id="text">Đây là đoạn văn bản.</p>
+
+<button onclick="getStyle()">Lấy style</button>
+<button onclick="setStyle()">Gán style</button>
+
+<p id="result"></p>
+
+<script>
+function getStyle() {
+    let el = document.getElementById("text");
+    let style = window.getComputedStyle(el);
+
+    document.getElementById("result").innerHTML =
+        "Màu chữ: " + style.color + "<br>" +
+        "Kích thước chữ: " + style.fontSize + "<br>" +
+        "Độ đậm: " + style.fontWeight;
+}
+
+function setStyle() {
+    let el = document.getElementById("text");
+    el.style.color = "red";
+    el.style.backgroundColor = "yellow";
+}
+</script>
+
+</body>
+</html>
