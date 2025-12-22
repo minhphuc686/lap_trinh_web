@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 2.5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>BIỂU MẪU KHẢO SÁT</h2>
+
+    <form>
+        <label>Họ tên</label>
+        <input type="text" placeholder="Nhập tên của bạn">
+
+        <label>Email</label>
+        <input type="email" placeholder="Nhập email của bạn">
+
+        <label>Tuổi</label>
+        <input type="number" placeholder="Nhập tuổi">
+
+        <label>Hiện tại bạn đang là?</label>
+        <select>
+            <option>Học sinh</option>
+            <option>Sinh viên</option>
+            <option>Đã đi làm</option>
+        </select>
+
+        <label>Bạn có thích học lập trình không?</label>
+        <div class="radio-group">
+            <input type="radio" name="like"> Có
+            <input type="radio" name="like"> Không
+            <input type="radio" name="like"> Bình thường
+        </div>
+
+        <label>Những chủ đề bạn quan tâm? (Có thể chọn nhiều đáp án)</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Trí tuệ nhân tạo <br>
+            <input type="checkbox"> Bảo mật thông tin <br>
+            <input type="checkbox"> Phát triển web <br>
+            <input type="checkbox"> Khoa học dữ liệu
+        </div>
+
+        <label>Bạn có câu hỏi gì không?</label>
+        <textarea placeholder="Nhập câu hỏi của bạn"></textarea>
+
+        <button type="submit">Gửi</button>
+    </form>
+</div>
+
+</body>
+</html>
